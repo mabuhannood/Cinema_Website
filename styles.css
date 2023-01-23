@@ -4,47 +4,28 @@ header {
 }
 header ul {
   list-style: none;
-  /* padding-left: 0; */
   display: flex;
   justify-content: center;
   text-decoration: none;
 }
 ul > li {
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-bottom: 10px;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 25px;
+
   color: goldenrod;
   font-weight: bold;
 }
 ul > li:hover {
   border-bottom: goldenrod solid 3px;
 }
-header a {
+a {
   text-decoration: none;
   color: goldenrod;
 }
-footer a {
-  text-decoration: none;
-  color: goldenrod;
-}
-main a {
-  text-decoration: none;
-  color: goldenrod;
-}
-
-ul > li > img {
-  height: 50px;
-  width: 50px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 h3 {
   color: goldenrod;
   padding: 20px;
-  /* background-image: url(/Assets/header.jpg); */
 }
 main {
   background-image: url(/Assets/background.jpg);
@@ -71,29 +52,20 @@ body {
   font-weight: bold;
 }
 button {
-  /* cursor: pointer; */
-  border-radius: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: gold;
-  background-color: black;
-  border: 1px solid gold;
   font-weight: bold;
 }
-button:hover {
-  background-color: gold;
-  color: black;
-}
-#btn-noresponse {
+
+.btn-noresponse {
+  cursor: unset;
   border-radius: 0px;
   padding: 10px;
   /* padding-bottom: 0px; */
-  border: goldenrod solid 1px;
+  border: silver solid 1px;
   color: black;
-  background-color: gold;
+  background-color: silver;
 }
 
-#div-poster {
+.div-poster {
   display: flex;
   flex-direction: column;
   padding: 50px;
@@ -101,18 +73,29 @@ button:hover {
 }
 #div-section1 {
   display: flex;
-}
-#section1 p {
   justify-content: center;
 }
-#img-poster {
+
+.img-poster {
   /* padding-bottom: 15px; */
   width: 250px;
   height: 350px;
   border: goldenrod solid 1px;
   margin-bottom: 10px;
 }
-#btn-poster {
+#btn-main {
+  background-color: black;
+  border: gold 1.5px solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+#btn-main:hover {
+  background-color: gold;
+  border: black;
+  color: black;
+}
+.btn-poster {
+  cursor: pointer;
   border-radius: 0px;
   padding: 10px;
   /* padding-bottom: 0px; */
@@ -120,12 +103,12 @@ button:hover {
   color: black;
   background-color: gold;
 }
-#btn-poster:hover {
+.btn-poster:hover {
   color: black;
   background-color: rgb(124, 93, 14);
-  border-color: goldenrod;
+  border-color: rgb(124, 93, 14);
 }
-#btn-poster a {
+.btn-poster a {
   text-decoration: none;
   color: black;
 }
