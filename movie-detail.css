@@ -1,0 +1,145 @@
+header {
+  height: 50px;
+  background-color: black;
+}
+header ul {
+  list-style: none;
+  /* padding-left: 100px; */
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+ul > li {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: goldenrod;
+}
+ul > li:hover {
+  border-bottom: goldenrod solid 3px;
+}
+a {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+ul > li > img {
+  height: 50px;
+  width: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+h3 {
+  color: goldenrod;
+  padding: 20px;
+  /* background-image: url(/Assets/header.jpg); */
+}
+
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+#div-video {
+  text-align: center;
+  color: goldenrod;
+  border: 1px solid goldenrod;
+  margin-top: 19px;
+}
+iframe {
+  border: 1px solid goldenrod;
+}
+#div-desc {
+  width: 400px;
+  padding-left: 50px;
+  color: goldenrod;
+}
+#div-desc h3 {
+  text-align: center;
+  border: 1px solid goldenrod;
+  padding: 10px;
+}
+#div-showtimes {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* padding: 20px; */
+  color: goldenrod;
+}
+#div-date > p {
+  text-align: left;
+  margin-bottom: auto;
+  margin-top: 11px;
+  padding-right: 50px;
+}
+button {
+  cursor: pointer;
+  /* border-radius: 5px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: black;
+  background-color: gold;
+  border: 1px solid goldenrod;
+  margin: 10px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: rgb(124, 93, 14);
+  border: 1px solid gold;
+  color: black;
+}
+/* #btn-soldout:hover {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: black;
+  background-color: gold;
+  border: 1px solid goldenrod;
+  margin: 10px;
+  font-weight: bold;
+  cursor: auto;
+} */
+section > h3 {
+  text-align: center;
+}
+section {
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+#div-footer {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#div-footer > p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#div-footer > img {
+  width: 25px;
+  height: 25px;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+footer {
+  justify-content: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: black;
+  border-top: 2px solid goldenrod;
+  color: white;
+  margin-top: 100px;
+}

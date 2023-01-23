@@ -1,10 +1,180 @@
+header {
+  height: 50px;
+  background-color: black;
+}
 header ul {
   list-style: none;
-  padding-left: 0;
+  /* padding-left: 0; */
   display: flex;
   justify-content: center;
   text-decoration: none;
 }
 ul > li {
-  padding-left: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: goldenrod;
+  font-weight: bold;
+}
+ul > li:hover {
+  border-bottom: goldenrod solid 3px;
+}
+header a {
+  text-decoration: none;
+  color: goldenrod;
+}
+footer a {
+  text-decoration: none;
+  color: goldenrod;
+}
+main a {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+ul > li > img {
+  height: 50px;
+  width: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h3 {
+  color: goldenrod;
+  padding: 20px;
+  /* background-image: url(/Assets/header.jpg); */
+}
+main {
+  background-image: url(/Assets/background.jpg);
+  background-size: cover;
+  height: 500px;
+  background-position: center;
+}
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+#div-main {
+  position: absolute;
+  border: 2px solid gold;
+  background-color: black;
+  color: gold;
+  border-radius: 10px;
+  text-align: center;
+  width: 170px;
+  padding: 15px;
+  right: 120px;
+  top: 140px;
+  opacity: 0.8;
+  font-weight: bold;
+}
+button {
+  /* cursor: pointer; */
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: gold;
+  background-color: black;
+  border: 1px solid gold;
+  font-weight: bold;
+}
+button:hover {
+  background-color: gold;
+  color: black;
+}
+#btn-noresponse {
+  border-radius: 0px;
+  padding: 10px;
+  /* padding-bottom: 0px; */
+  border: goldenrod solid 1px;
+  color: black;
+  background-color: gold;
+}
+
+#div-poster {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin: auto;
+}
+#div-section1 {
+  display: flex;
+}
+#section1 p {
+  justify-content: center;
+}
+#img-poster {
+  /* padding-bottom: 15px; */
+  width: 250px;
+  height: 350px;
+  border: goldenrod solid 1px;
+  margin-bottom: 10px;
+}
+#btn-poster {
+  border-radius: 0px;
+  padding: 10px;
+  /* padding-bottom: 0px; */
+  border: goldenrod solid 1px;
+  color: black;
+  background-color: gold;
+}
+#btn-poster:hover {
+  color: black;
+  background-color: rgb(124, 93, 14);
+  border-color: goldenrod;
+}
+#btn-poster a {
+  text-decoration: none;
+  color: black;
+}
+
+#div-footer {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#div-footer > p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#div-footer > img {
+  width: 25px;
+  height: 25px;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+footer {
+  justify-content: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: black;
+  border-top: 2px solid goldenrod;
+  color: white;
+}
+#div-contact {
+  width: 400px;
+  height: 300px;
+}
+#div-section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+#div-contact {
+  padding-right: 350px;
+  width: 250px;
+}
+#section1 {
+  text-align: center;
+}
+#section2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
 }
