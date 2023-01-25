@@ -19,3 +19,15 @@ for (const i of divs) {
     }
   });
 }
+
+const buyTicket = () => {
+  localStorage.setItem(
+    "timeObject",
+    JSON.stringify({
+      selectedTime: "10:00PM",
+      selectedDate: "26 January 2023",
+    })
+  );
+};
+
+document.querySelector("#buy-ticket").addEventListener("click", buyTicket);

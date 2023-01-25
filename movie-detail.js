@@ -8,7 +8,8 @@ for (const i of divs) {
     ) {
       console.log(event.target.innerHTML);
       const selectedTime = event.target.innerHTML;
-      const divData = i.innerHTML;
+      const divData = event.target.value;
+      console.log(divData);
 
       localStorage.setItem(
         "timeObject",

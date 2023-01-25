@@ -24,10 +24,10 @@
     <header>
       <nav>
         <ul>
-          <li><a href="/">HOME</a></li>
-          <li><a href="details.html">NOW PLAYING</a></li>
-          <li><a href="#">BUY TICKETS</a></li>
-          <li><a href="#location">LOCATION</a></li>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./details.html">NOW PLAYING</a></li>
+          <li><a id="buy-ticket" href="./purchase.html">BUY TICKETS</a></li>
+          <li><a href="./index.html#location">LOCATION</a></li>
         </ul>
       </nav>
     </header>
@@ -56,7 +56,8 @@
           <img class="img-poster" src="assets/poster3-main page.jpg" />
           <button class="btn-noresponse">COMING SOON</button>
         </div>
-      </div>Assets
+      </div>
+      Assets
     </section>
     <section id="section2">
       <h3 id="location">OUR LOCATION</h3>
@@ -89,33 +90,21 @@
       crossorigin=""
     ></script>
     <script>
-      // Initialize the map
       const map = L.map("map");
 
-      // Get the tile layer from OpenStreetMaps
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        // Specify the maximum zoom of the map
         maxZoom: 19,
 
-        // Set the attribution for OpenStreetMaps
         attribution:
           '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map);
 
-      // Set the view of the map
-      // with the latitude, longitude and the zoom value
       map.setView([34.101776, -118.327171], 16);
 
-      // Set the map view to the user's location
-      // Uncomment below to set map according to user location
-      // map.locate({setView: true, maxZoom: 16});
-
-      // Show a market at the position of the Eiffel Tower
       let eiffelMarker = L.marker([34.101776, -118.327171]).addTo(map);
 
-      // Bind popup to the marker with a popup
       eiffelMarker.bindPopup("We are here").openPopup();
     </script>
-     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

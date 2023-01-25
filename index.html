@@ -24,10 +24,10 @@
     <header>
       <nav>
         <ul>
-          <li><a href="/">HOME</a></li>
-          <li><a href="/movie-detail.html">NOW PLAYING</a></li>
-          <li><a href="#">BUY TICKETS</a></li>
-          <li><a href="#location">LOCATION</a></li>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./details.html">NOW PLAYING</a></li>
+          <li><a id="buy-ticket" href="./purchase.html">BUY TICKETS</a></li>
+          <li><a href="./index.html#location"> LOCATION</a></li>
         </ul>
       </nav>
     </header>
@@ -111,11 +111,11 @@
       // Uncomment below to set map according to user location
       // map.locate({setView: true, maxZoom: 16});
 
-      // Show a market at the position of the Eiffel Tower
+      // Show a market at the position of the Hollywood
       let eiffelMarker = L.marker([48.8584, 2.2945]).addTo(map);
 
       // Bind popup to the marker with a popup
-      eiffelMarker.bindPopup("Eiffel Tower").openPopup();
+      eiffelMarker.bindPopup("Hollywood").openPopup();
     </script>
   </body>
 </html>
