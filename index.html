@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grand Cinema</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -27,7 +27,7 @@
           <li><a href="./index.html">HOME</a></li>
           <li><a href="./details.html">NOW PLAYING</a></li>
           <li><a id="buy-ticket" href="./purchase.html">BUY TICKETS</a></li>
-          <li><a href="./index.html#location"> LOCATION</a></li>
+          <li><a href="./index.html#location">LOCATION</a></li>
         </ul>
       </nav>
     </header>
@@ -36,27 +36,28 @@
         <p>NOW PLAYING</p>
         <p>THE DARK KNIGHT</p>
         <p>Jan 26 - 2023</p>
-        <a id="btn-main" href="/movie-detail.html">VIEW DETAILS</a>
+        <a id="btn-main" href="details.html">VIEW DETAILS</a>
       </div>
     </main>
     <section id="section1">
       <h3>ALL MOVIES</h3>
       <div id="div-section1">
         <div class="div-poster">
-          <img class="img-poster" src="/Assets/poster1-main page.jpg" />
+          <img class="img-poster" src="assets/poster1-main page.jpg" />
           <button class="btn-poster">
-            <a href="/movie-detail.html"> VIEW DETAILS</a>
+            <a href="details.html"> VIEW DETAILS</a>
           </button>
         </div>
         <div class="div-poster">
-          <img class="img-poster" src="/Assets/poster2-main page.jpg" />
+          <img class="img-poster" src="assets/poster2-main page.jpg" />
           <button class="btn-noresponse">COMING SOON</button>
         </div>
         <div class="div-poster">
-          <img class="img-poster" src="/Assets/poster3-main page.jpg" />
+          <img class="img-poster" src="assets/poster3-main page.jpg" />
           <button class="btn-noresponse">COMING SOON</button>
         </div>
       </div>
+      Assets
     </section>
     <section id="section2">
       <h3 id="location">OUR LOCATION</h3>
@@ -74,48 +75,36 @@
     </section>
     <footer>
       <div id="div-footer">
-        <img src="/Assets/fb.png" />
+        <img src="assets/fb.png" />
         <p><a href="#">@grandcinema</a></p>
-        <img src="/Assets/twitter.png" />
+        <img src="assets/twitter.png" />
         <p><a href="#">@grandcinema</a></p>
-        <img src="/Assets/insta.png" />
+        <img src="assets/insta.png" />
         <p><a href="#">@grandcinema</a></p>
       </div>
       <p>© Grand Cinema</p>
     </footer>
-    <script type="text/javascript" src="/app.js"></script>
     <script
       src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
       integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
       crossorigin=""
     ></script>
     <script>
-      // Initialize the map
       const map = L.map("map");
 
-      // Get the tile layer from OpenStreetMaps
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        // Specify the maximum zoom of the map
         maxZoom: 19,
 
-        // Set the attribution for OpenStreetMaps
         attribution:
           '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map);
 
-      // Set the view of the map
-      // with the latitude, longitude and the zoom value
-      map.setView([48.8584, 2.2945], 16);
+      map.setView([34.101776, -118.327171], 16);
 
-      // Set the map view to the user's location
-      // Uncomment below to set map according to user location
-      // map.locate({setView: true, maxZoom: 16});
+      let eiffelMarker = L.marker([34.101776, -118.327171]).addTo(map);
 
-      // Show a market at the position of the Hollywood
-      let eiffelMarker = L.marker([48.8584, 2.2945]).addTo(map);
-
-      // Bind popup to the marker with a popup
-      eiffelMarker.bindPopup("Hollywood").openPopup();
+      eiffelMarker.bindPopup("We are here").openPopup();
     </script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

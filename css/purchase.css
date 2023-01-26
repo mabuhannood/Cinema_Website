@@ -1,0 +1,187 @@
+header {
+    height: 50px;
+    background-color: black;
+}
+
+body {
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+#warning {
+    color: black;
+    background-color: darkred;
+    text-align: center;
+    font-size: 20px;
+    width: 40%;
+    margin-left: 30%;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+ul>li {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 25px;
+
+    color: goldenrod;
+    font-weight: bold;
+}
+
+ul>li:hover {
+    border-bottom: goldenrod solid 3px;
+}
+
+a {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+label, p {
+    color: goldenrod;
+}
+
+#div-footer {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#div-footer>p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#div-footer>img {
+    width: 25px;
+    height: 25px;
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+footer {
+    justify-content: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+    border-top: 2px solid goldenrod;
+    color: white;
+    margin-top: 100px;
+}
+#genAdmission, #otherAdmission{
+    width: 50px;
+
+}
+.pForm {
+    text-align: center;
+    background-color: goldenrod;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70%;
+    margin-left: 30%;
+}
+
+#main_order {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+#tickets > label {
+    margin-right: 10%;
+    margin-left: 50%;
+}
+
+
+input[type=text], input[type=email] {
+    margin-top: 20px;
+    background-color: goldenrod;    
+    margin-bottom: 20px;
+}
+#tickets{
+    flex: 50%;
+    margin-top: 30px;
+}
+
+#payment input[type=text], #payment input[type=email]{
+    margin-top: 20px;
+    margin-left: 55%;
+}
+
+#payment button {
+    margin-top: 20px;
+    margin-left: 58%;
+}
+
+#payment input[type=radio]{
+    margin-top: 20px;
+    margin-left: 50%;
+}
+
+#payment label {
+    margin-left: 5%;
+}
+
+#payment{
+    flex: 50%;
+}
+
+#order{
+    flex: 50%;
+}
+
+#orderSummary{
+    flex: 50%;
+    text-align: center;
+}
+
+.img-poster {
+    width: 250px;
+    height: 350px;
+    border: goldenrod solid 1px;
+    margin-bottom: 10px;
+  }
+#pay {
+    cursor: pointer;
+    border-radius: 0px;
+    padding: 10px;
+    border: goldenrod solid 1px;
+    color: black;
+    background-color: gold;
+    margin-top: 50px;
+    padding-left: 40px;
+    padding-right : 40px;
+    font-weight: bold;
+  }
+
+#img_paypal {
+    width: 75px;
+    height: 25px;
+    margin-left: 15%;
+    margin-bottom: 0;
+}
+
+#img_creditdebit {
+    width: 40px;
+    height: 25px;
+    margin-left: 12%;
+    margin-bottom: 0;
+}
+
+#creditInfo, #paypalInfo {
+    display: none;
+}
